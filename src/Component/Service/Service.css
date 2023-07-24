@@ -1,0 +1,43 @@
+.service {
+  font-size: 35px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+}
+.products2 {
+  display:flex;
+  flex-wrap:wrap;
+  gap: 2rem;
+  padding: 12px;
+  margin-top: 2rem;
+}
+.image1 {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  background-color: rgba(240, 240, 240, 0.438);
+  
+}
+.img1 {
+    width: 120px;
+    height: 120px;
+    position: absolute;
+    mix-blend-mode:darken;
+}
+.image1:hover{
+ transition:cubic-bezier(0.075, 0.82, 0.165, 1);
+ background-color: rgba(231, 223, 227, 0.445);
+}
+.name{
+    position: absolute;
+   margin-top: 14.5rem;
+   font-size: medium;
+   font-family: 'Dancing Script', cursive;
+
+
+}

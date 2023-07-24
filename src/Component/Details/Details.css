@@ -1,0 +1,61 @@
+.maindiv{
+    margin-top:15px ;
+    padding: 10px;
+    width: 100%;
+    border-radius: 12px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+}
+.subdiv{
+width: 50%;
+}
+.sub_img{
+width:fit-content;
+border: 1px solid black;
+display: flex;
+align-items: center;
+border-radius: 12px;
+margin-right: 12px;
+}
+.sub_img:hover{
+ background-color: antiquewhite;
+}
+.btn{
+    width: 130px;
+    transition: width 2s;
+}
+.btn:hover{
+    width: 300px;
+    color: aqua;
+}
+.letter{
+    font-family: 'Dancing Script', cursive;
+    font-size: 18px;
+}
+@media only screen and (max-width: 600px) {
+    .maindiv{
+        margin-top: 1rem;
+        width: 100%;
+    }
+    .subdiv{
+       width: 50%;
+       height: 80vh;
+       overflow: hidden;
+    }
+    .sub_img{
+        width: 50%;
+        height: 80vh;
+    }
+  }
+ 
+  
+  @media only screen and (min-width: 600px) {
+   
+    .subdiv{
+        width: 50%;
+        height: 80vh;
+        overflow: hidden;
+     }
+  }
+
