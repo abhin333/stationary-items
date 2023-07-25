@@ -1,13 +1,13 @@
 import React from "react";
 import "./Details.css";
 import Button from "react-bootstrap/Button";
-import img from "../../assets/images/image1.jpg";
+import img from "../../assets/images/17.jpg";
 import ContentWrapper from "../ContentWrapper/ContentWrapper";
 const Details = () => {
   return (
     <>
       <ContentWrapper>
-        <div className="maindiv">
+        <div className="maindiv1">
           <div className="subdiv">
             <div className="letter">
               Welcome to our enchanting world of books and stationery, where
@@ -30,11 +30,15 @@ const Details = () => {
               skills and broaden your horizons.
             </div>
           </div>
-          <div className="sub_img">
-            <img className="img1" src={img} alt="img" />
+          <div className="sub2">
+            <div className="sub_inner">
+              <img className="rightsideimage" src="https://scooboo.in/cdn/shop/files/IMG_3634.jpg?v=1682620347&width=1920" alt="img" />
+            </div>
           </div>
         </div>
-        <Button className="p-2 mt-2 btn" variant="dark">Enjoy now !</Button>
+        <Button className="p-2 mt-2 btn " variant="dark">
+          Enjoy now !
+        </Button>
       </ContentWrapper>
     </>
   );

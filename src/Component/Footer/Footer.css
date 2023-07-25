@@ -6,7 +6,14 @@
   display: flex;
   justify-content: center;
 }
-
+.contact-details{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: small;
+  gap: 1rem;
+  margin-top: 12px;
+}
  .menuItems {
   list-style-type: none;
   display: flex;

@@ -1,61 +1,76 @@
-.maindiv{
-    margin-top:15px ;
-    padding: 10px;
-    width: 100%;
-    border-radius: 12px;
-    cursor: pointer;
+.maindiv1 {
+  margin-top: 15px;
+  padding: 10px;
+  max-width: 100%;
+  border-radius: 12px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+.subdiv {
+  width: 50%;
+  position: relative;
+}
+.sub2 {
+  width: 50%;
+  position: relative;
+}
+.sub_inner {
+  position: absolute;
+  top: 2rem;
+  left: 2rem;
+}
+.rightsideimage {
+  border-radius: 10%;
+}
+.btn {
+  width: 130px;
+  transition: width 2s;
+}
+.btn:hover {
+  width: 300px;
+  color: aqua;
+}
+.letter {
+  font-family: "Dancing Script", cursive;
+  font-size: 18px;
+}
+@media screen and (max-width: 479px) {
+  .maindiv1 {
+    margin-top: 4rem;
+    height: 120vh;
     display: flex;
-    justify-content: space-between;
-}
-.subdiv{
-width: 50%;
-}
-.sub_img{
-width:fit-content;
-border: 1px solid black;
-display: flex;
-align-items: center;
-border-radius: 12px;
-margin-right: 12px;
-}
-.sub_img:hover{
- background-color: antiquewhite;
-}
-.btn{
-    width: 130px;
-    transition: width 2s;
-}
-.btn:hover{
+    flex-direction: column-reverse;
+    overflow: scroll;
+    justify-content: center;
+    align-items: center;
+  }
+  .rightsideimage {
     width: 300px;
-    color: aqua;
-}
-.letter{
-    font-family: 'Dancing Script', cursive;
-    font-size: 18px;
-}
-@media only screen and (max-width: 600px) {
-    .maindiv{
-        margin-top: 1rem;
-        width: 100%;
-    }
-    .subdiv{
-       width: 50%;
-       height: 80vh;
-       overflow: hidden;
-    }
-    .sub_img{
-        width: 50%;
-        height: 80vh;
-    }
+    margin-left: -99px;
+    margin-top: -40px;
   }
- 
-  
-  @media only screen and (min-width: 600px) {
-   
-    .subdiv{
-        width: 50%;
-        height: 80vh;
-        overflow: hidden;
-     }
+  .sub_inner {
+    width: 100%;
   }
-
+  .subdiv {
+    margin-top: 20rem;
+    width: 250px;
+    overflow: scroll;
+  }
+}
+@media screen and (max-width: 767px) {
+  .maindiv1 {
+    margin-top: 4rem;
+    height: 100vh;
+    overflow: scroll;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .maindiv1 {
+    margin-top: 4rem;
+    height: 75vh;
+    overflow: scroll;
+  }
+}
