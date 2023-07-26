@@ -10,7 +10,7 @@ const Nabar = () => {
 
   return (
     <>
-    <header id="header" className="header">
+    <section id='home'>    <header id="header" className="header">
       <Navbar bg="dark" data-bs-theme="dark">
         <Container>
           <Nav className="me-auto">
@@ -22,6 +22,8 @@ const Nabar = () => {
         </Container>
       </Navbar>
       </header>
+      </section>
+
     </>
   );
 };

@@ -89,6 +89,19 @@
     font-family: "Dancing Script", cursive;
     margin-bottom: 6rem;
   }
+  .pages{
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    width: 100%;
+    left:0;
+  }
+  .left{
+    width: 100%;
+  }
+  .right{
+    width: 100%;
+  }
 }
 @media screen and (max-width: 767px) {
   .products2 {
@@ -113,9 +126,19 @@
     font-family: "Dancing Script", cursive;
     margin-bottom: 6rem;
   }
+  .pages{
+    display: flex;
+    justify-content: space-evenly;
+    position: relative;
+  }
 }
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   .products2 {
     margin-left: 2.5rem;
+  }
+  .pages{
+    display: flex;
+    justify-content: space-evenly;
+    position: relative;
   }
 }

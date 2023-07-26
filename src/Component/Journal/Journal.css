@@ -2,6 +2,8 @@
   width: 100%;
   height: 100vh;
   display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .left-side {
   width: 70%;
@@ -22,29 +24,72 @@
   font-size: 30px;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
-    margin-left: 12px;
+  margin-left: 12px;
 }
 .posts {
   width: 100%;
-  height: 120px;
-  display: flex;
-  flex-wrap: wrap;
-  gap:8px;
+  height: 70%;
+  display: block;
+  flex-wrap:wrap;
+  justify-content:space-between;
   align-items: center;
+  text-align: center;
+  gap: 18px;
   cursor: pointer;
 }
+.dis{
+  font-size: small;
+}
+
 .img2 {
-  width: 185px;
+  width: 200px;
   height: 119px;
   border-radius: 2rem;
-  margin-left: 1rem;
   will-change: transform;
   transition: transform 450ms;
+  position: relative;
 }
-.img2:hover{
-    transition: transform 450ms;
+
+.img2:hover {
+  transition: transform 450ms;
   transform: translateY(-10px);
 }
 .dis {
   width: fit-content;
+}
+
+@media screen and (max-width: 479px) {
+  .main-journal {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: scroll;
+  }
+  .left_images {
+    margin-top: 2rem;
+    width: 80%;
+    height: 80%;
+    margin-left: 12px;
+  }
+  .left-side {
+    border: none;
+    width: 100%;
+    margin-top: 156px;
+  }
+  .right-side {
+    width: 80%;
+    height: 170vh;
+    text-align: center;
+  }
+  .posts {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .post {
+    font-size: 25px;
+  }
 }

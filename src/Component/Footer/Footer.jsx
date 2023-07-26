@@ -19,8 +19,6 @@ const Fotter = () => {
             <li className="menuItem">Terms of services</li>
             <li className="menuItem">Private Policy</li>
             <li className="menuItem">About</li>
-            <li className="menuItem">Blog</li>
-            <li className="menuItem">QA</li>
           </ul>
           <div className="discreption">
             Lorem Ipsum is simply dummy text of the printing and typesetting

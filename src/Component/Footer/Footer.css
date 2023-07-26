@@ -37,7 +37,7 @@
   opacity: 0.5;
   max-width: 800px;
   margin-bottom: 20px;
-  margin-left: 12rem;
+  margin-left:12rem;
 }
 .socialIcons {
   display: flex;
@@ -60,3 +60,30 @@
   box-shadow: 0 0 0.625em var(--pink);
   color: rgb(196, 72, 140);
 } 
+
+@media screen and (max-width: 479px) {
+.discreption{
+  display: block;
+  margin-left: 0rem;
+
+}
+
+
+}
+@media screen and (max-width: 767px) {
+
+  .discreption{
+    display: block;
+    margin-left: 0rem;
+  
+  }
+
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+
+  .discreption{
+    display: block;
+    margin-left: 0rem;
+  
+  }
+}
